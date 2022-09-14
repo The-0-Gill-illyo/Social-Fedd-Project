@@ -10,11 +10,11 @@ const DisplayPost = (props) => {
             </thead>
             <tbody>
             {props.parentEntries.map((entry) => {
-                return(
-                <tr>
-                    <td>{entry.name}</td>
-                    <td>{entry.post}</td>
-                </tr>
+                return (
+                    <tr>
+                        <td>{entry.name}</td>
+                        <td>{entry.post}</td>
+                    </tr>
                 );
             })}
             </tbody>
