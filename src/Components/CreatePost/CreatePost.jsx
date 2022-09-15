@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
+
 const CreatePost = (props) => {
 
     const [name, setName] = useState("");
     const [post, setPost] = useState("");
+
 
     function submitPost(event) {
         event.preventDefault();
@@ -21,6 +23,7 @@ const CreatePost = (props) => {
             <label>Post</label>
             <input type="string" value={post} onChange={(event) => setPost(event.target.value)} />
             <button type="post">Create</button>
+            
         </form>
      );
 }

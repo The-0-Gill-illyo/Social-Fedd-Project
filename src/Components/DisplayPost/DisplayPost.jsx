@@ -9,11 +9,13 @@ const DisplayPost = (props) => {
             </tr>
             </thead>
             <tbody>
-            {props.parentEntries.map((entry) => {
+            {props.parentEntries.map((entry, index) => {
                 return (
-                    <tr>
+                    <tr key={index}>
                         <td>{entry.name}</td>
                         <td>{entry.post}</td>
+                        <button type="like">Like</button>
+                        <button type="dislike">Dislike</button>
                     </tr>
                 );
             })}
